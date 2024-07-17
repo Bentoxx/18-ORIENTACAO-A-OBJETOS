@@ -20,17 +20,19 @@ class Carro {
     }
     
 }
-const fusca = new Carro({
+const novoCarro = {
     cor: 'Preto',
+    ano: 1970,
     marca: 'Volkswagem',
     modelo: 'Fusca',
-    ano: 1970,
     potencia: 120
-})
+}
+const fusca = new Carro(novoCarro)
 // fusca.ano = 1970
 // fusca.cor = 'Preto'
 // fusca.marca = 'Volkswagem'
 // fusca.modelo = 'Fusca'
 // fusca.potencia = 90
-
+console.log(fusca);
+fusca.cor = 'Branco'
 console.log(fusca);
